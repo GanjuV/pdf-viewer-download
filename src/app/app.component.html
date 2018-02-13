@@ -1,0 +1,17 @@
+
+<div *ngIf="isLoaded" style="text-align: center;">
+  <button (click)="prevPage()" [disabled]="page === 1">Prev</button>
+  <span>{{ page }} / {{ totalPages }}</span>
+  <button (click)="nextPage()" [disabled]="page === totalPages">Next</button>
+  <button (click)="download()" >Download</button>
+</div>
+{{progressData}}
+<pdf-viewer src="https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            [show-all]="false"
+            [page]="page"
+            [render-text]="true"
+            [external-link-target]="'blank'"
+            [zoom]="0.6"
+            (on-progress)="onProgress($event)"
+            (after-load-complete)="afterLoadComplete($event)"
+></pdf-viewer>
