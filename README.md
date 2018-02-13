@@ -31,3 +31,11 @@ Please use `yarn install` to install the dependency
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## PDF Viewer
+
+Using third party liberary `ng2-pdf-viewer` to view the files.
+
+## File save
+
+Using `file-saver` third party liberary to save the files.
